@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Introduce from './components/Introduce'
+import Project from './components/Project'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
         <Header />
         <Introduce />
       </div>
+      <Project />
     </div>
   )
 }
