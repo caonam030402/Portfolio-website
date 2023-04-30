@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  background: #000000;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+}
