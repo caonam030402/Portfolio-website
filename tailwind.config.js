@@ -4,7 +4,11 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        pattern: "url('./src/assets/herobg.png')"
+      }
+    }
   },
   plugins: [
     plugin(function ({ addComponents, theme }) {

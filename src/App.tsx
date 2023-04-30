@@ -1,8 +1,11 @@
-import useRouteElements from './useRouteElements'
+import Home from './pages/Home/Home'
 
 function App() {
-  const routeElements = useRouteElements()
-  return <div>{routeElements}</div>
+  return (
+    <div>
+      <Home />
+    </div>
+  )
 }
 
 export default App
