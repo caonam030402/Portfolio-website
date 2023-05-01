@@ -15,7 +15,7 @@ export default function Project() {
       </div>
       <div className='mb-10 mt-10 grid grid-cols-12 gap-6'>
         {projectData.map((item, index) => (
-          <div className='col-span-4 rounded-xl bg-blue-700/25 p-[20px] text-left' key={index}>
+          <div className='col-span-6 rounded-xl bg-blue-700/25 p-[20px] text-left md:col-span-4' key={index}>
             <div className='h-[200px]'>
               <img className='h-[100%] w-[100%]' src={item.image} alt='' />
             </div>

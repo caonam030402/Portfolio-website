@@ -15,15 +15,16 @@ export default function Header() {
       <div>
         <img src={logo} alt='' />
       </div>
-      <div className='flex justify-center gap-14 text-lg'>
+      <div className='flex justify-center gap-14 text-lg '>
         {menu.map((item, index) => (
-          <Link className='hover:text-blue-700' key={index} to=''>
+          <Link className='hidden hover:text-blue-700 md:block' key={index} to=''>
             {item}
           </Link>
         ))}
       </div>
       <DarkModeSwitch
-        style={{ color: '#fff', width: '100px' }}
+        className='md:w-[100px]'
+        style={{ color: '#fff' }}
         checked={isDarkMode}
         onChange={toggleDarkMode}
         size={30}

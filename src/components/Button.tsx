@@ -3,11 +3,14 @@ import React, { ReactNode } from 'react'
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode
   withIcon?: boolean
+  classNameOther?: string
 }
 
-export default function Button({ children, withIcon = true }: Props) {
+export default function Button({ children, withIcon = true, classNameOther }: Props) {
   return (
-    <button className='text- flex items-center gap-1 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-7 py-2'>
+    <button
+      className={`text- flex items-center gap-1 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 px-7 py-2 ${classNameOther}`}
+    >
       <span className='text-base uppercase'>{children}</span>
       {withIcon && (
         <span>

@@ -4,17 +4,21 @@ import Introduce from './components/Introduce'
 import Project from './components/Project'
 import Experience from './components/Experience'
 import AboutMe from './components/AboutMe'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
     <div>
-      <div className='h-[783px] bg-pattern bg-cover'>
+      <div className='bg-pattern bg-cover md:h-[783px]'>
         <Header />
         <Introduce />
       </div>
       <AboutMe />
       <Project />
-      <Experience />
+      {/* <Experience /> */}
+      <Contact />
+      <Footer />
     </div>
   )
 }

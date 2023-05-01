@@ -1,11 +1,10 @@
-import React from 'react'
 import Button from 'src/components/Button'
 import avatar from 'src/assets/avatar.png'
 
 export default function AboutMe() {
   return (
-    <div className='container mb-36 grid grid-cols-12 items-center gap-20'>
-      <div className='col-span-7'>
+    <div className='container relative mb-36 grid grid-cols-7 items-center md:grid-cols-12 md:gap-20'>
+      <div className='col-span-7 mt-20 md:mt-0'>
         <h1 className='text-[48px] font-bold'>ABOUT ME</h1>
         <p className='text-[16px]'>
           Hello, I'm Cao Nam, a student majoring in Information Technology. I have experience and passion in the field
@@ -32,7 +31,7 @@ export default function AboutMe() {
         </div>
         <Button>CONTACT</Button>
       </div>
-      <div className='col-span-5 h-[600px] overflow-hidden rounded-full bg-blue-700/0'>
+      <div className='col-span-7 h-[100%] overflow-hidden rounded-full bg-blue-700/0 md:col-span-5'>
         <img src={avatar} alt='' />
       </div>
     </div>
