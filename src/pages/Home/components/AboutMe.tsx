@@ -3,7 +3,7 @@ import avatar from 'src/assets/avatar.png'
 
 export default function AboutMe() {
   return (
-    <div className='container relative mb-36 grid grid-cols-7 items-center md:grid-cols-12 md:gap-20'>
+    <div className='container mb-36 grid grid-cols-7 items-center md:grid-cols-12 md:gap-20'>
       <div className='col-span-7 mt-20 md:mt-0'>
         <h1 className='text-[48px] font-bold'>ABOUT ME</h1>
         <p className='text-[16px]'>
