@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <div className='container my-[25px] text-center'>
       <h1 className='text-[48px] font-bold'>PROJECT</h1>
-      <p className='text-[20px]'>These are some of my products in the process of studying and working.</p>
+      <p className='text-[16px]'>These are some of my products in the process of studying and working.</p>
       <div className='mt-8 flex justify-center gap-5'>
         <button className='w-[100px] rounded-lg bg-cyan-500 py-1'>All</button>
         <button className='w-[100px] rounded-lg border-[1px] border-cyan-500 py-1'>Design</button>
