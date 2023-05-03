@@ -1,18 +1,40 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useActionData } from 'react-router-dom'
 import logo from '../../../assets/logo.png'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 import Button from 'src/components/Button'
 import { CgMenuLeft } from 'react-icons/cg'
 import { IoMdClose } from 'react-icons/io'
+import useDarkMode from 'src/hooks/useDarkMode'
 
 export default function Header() {
-  const [isDarkMode, setDarkMode] = React.useState(false)
   const [isOpenMenu, setOpenMenu] = useState(false)
+  const { colorTheme, setTheme } = useDarkMode()
+  const [isScroll, setIsScroll] = useState(false)
+  const [darkSide, setDarkSide] = useState(colorTheme === 'light' ? true : false)
+
+  useEffect(() => {
+    const updatePosition = () => {
+      if (window.pageYOffset > 0) {
+        if (!isOpenMenu) {
+          setIsScroll(true)
+        } else {
+          setIsScroll(false)
+        }
+      } else {
+        setIsScroll(false)
+      }
+    }
+    window.addEventListener('scroll', updatePosition)
+    updatePosition()
+    return () => window.removeEventListener('scroll', updatePosition)
+  }, [isOpenMenu])
 
   const toggleDarkMode = (checked: boolean) => {
-    setDarkMode(checked)
+    setTheme(colorTheme)
+    setDarkSide(checked)
   }
+
   const menu = ['Home', 'Project', 'About', 'Contact']
 
   const handleOpenMenu = () => {
@@ -23,13 +45,19 @@ export default function Header() {
   }
 
   return (
-    <div className='container flex items-center justify-between py-5'>
+    <div
+      className={`fixed left-0 right-0 top-0 z-40 flex items-center justify-between py-5 ${
+        isScroll
+          ? 'bg-slate-50 px-4 drop-shadow-md backdrop-blur-sm transition-shadow dark:bg-gray-800 xl:px-[136px]'
+          : 'container bg-[#050816] bg-transparent'
+      }`}
+    >
       <CgMenuLeft onClick={handleOpenMenu} className='cursor-pointer text-3xl md:hidden' />
       <div className='flex items-center'>
-        <div className='md:mr-16'>
-          <img src={logo} alt='' />
+        <div className='w-20 md:mr-16'>
+          <img className='' src={logo} alt='' />
         </div>
-        <div className='flex justify-center gap-14 text-lg '>
+        <div className='flex justify-center gap-14 text-base font-semibold '>
           {menu.map((item, index) => (
             <Link className='hidden hover:text-blue-700 md:block' key={index} to=''>
               {item}
@@ -38,21 +66,18 @@ export default function Header() {
         </div>
       </div>
       <div className='flex items-center'>
-        <DarkModeSwitch
-          className='md:w-[100px]'
-          style={{ color: '#fff' }}
-          checked={isDarkMode}
-          onChange={toggleDarkMode}
-          size={30}
-        />
+        <DarkModeSwitch className='md:w-[100px]' checked={darkSide} onChange={toggleDarkMode} size={30} />
         <Button withIcon={false} classNameOther='rounded-[8px] md:block hidden'>
           My resume
         </Button>
       </div>
       {isOpenMenu && (
         <div className='md:hidden'>
-          <div className='fixed inset-0 bg-blue-700/10 backdrop-blur-sm'></div>
-          <div className='z-200 fixed left-[5%] right-[20%] top-[3%] flex h-auto justify-between gap-8 rounded-lg bg-blue-950 p-7'>
+          <button
+            onClick={handleCloseMenu}
+            className='fixed inset-0 bg-slate-200/25 backdrop-blur-sm dark:bg-blue-700/10'
+          ></button>
+          <div className='z-200 fixed left-[5%] right-[20%] top-[3%] flex h-auto justify-between gap-8 rounded-lg bg-white p-7 shadow-lg dark:bg-blue-950'>
             <div className='flex flex-col gap-10'>
               {menu.map((item, index) => (
                 <Link className='flex text-xl hover:text-blue-700 md:block' key={index} to=''>
