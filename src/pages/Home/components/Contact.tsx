@@ -82,7 +82,7 @@ export default function Contact() {
               {...register('message')}
               name='message'
               className={`${
-                errors.email
+                errors.message
                   ? 'block w-full rounded-lg border border-red-500 bg-red-50 p-2.5 text-sm text-red-900 placeholder-red-700 outline-none focus:border-red-500 focus:ring-red-500 dark:border-red-500 dark:bg-gray-700 dark:text-red-500 dark:placeholder-red-500'
                   : 'border border-gray-200 bg-white text-sm text-gray-900 outline-none focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500'
               } block h-[180px] w-full rounded-md px-3 py-3 dark:bg-gray-700`}
