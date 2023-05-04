@@ -78,7 +78,7 @@ export default function Header() {
           {menuData.map((item) => (
             <Link
               className={
-                active === item.name ? 'text-primary' : '' + 'hidden cursor-pointer hover:text-primary md:block'
+                active === item.name ? 'hidden text-primary' : '' + 'hidden cursor-pointer hover:text-primary md:block'
               }
               key={item.id}
               to={item.id}
