@@ -6,8 +6,9 @@ export default function AboutMe() {
   return (
     <div className='container mb-36 grid grid-cols-7 items-center md:gap-20 lg:grid-cols-12'>
       <div className='col-span-7 mt-20 md:mt-0'>
-        <h1 className={styles.heroHeadText}>Mình là ai ?</h1>
-        <p className={styles.sectionSubText}>
+        <h1 className={styles.heroSubText + ' mb-2 lg:mb-2'}>INTRODUCTION</h1>
+        <h1 className={styles.heroHeadText}>About Me</h1>
+        <p className={styles.sectionSubText + ' lg:mb-8'}>
           Chào bạn, tôi là Cao Nam - một sinh viên năm 3 chuyên ngành Công nghệ thông tin. Trong thời gian làm việc
           part-time và freelance, tôi đã tích lũy được 2 năm kinh nghiệm trong lĩnh vực Graphic Designer. Hiện tại, tôi
           đang quan tâm và có định hướng trở thành một nhà phát triển website. Tôi tin tưởng vào sự kiên trì và nỗ lực
