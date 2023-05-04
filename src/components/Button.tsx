@@ -12,7 +12,7 @@ export default function Button({ children, withIcon = true, classNameOther }: Pr
       <span className='text-sm uppercase text-white'>{children}</span>
       {withIcon && (
         <span>
-          <svg width={24} height={25} viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'>
+          <svg width={18} height={18} viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'>
             <path
               d='M13 5.5L20 12.5L13 19.5'
               stroke='#E3E4E6'
