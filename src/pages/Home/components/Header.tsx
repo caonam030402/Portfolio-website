@@ -54,7 +54,7 @@ export default function Header() {
     >
       <CgMenuLeft onClick={handleOpenMenu} className='cursor-pointer text-3xl md:hidden' />
       <div className='flex items-center'>
-        <div className='w-20 md:mr-16'>
+        <div className='w-32 md:mr-16'>
           <img className='' src={logo} alt='' />
         </div>
       </div>

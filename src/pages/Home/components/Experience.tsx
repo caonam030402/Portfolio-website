@@ -9,7 +9,7 @@ export default function Experience() {
   return (
     <div className='container mt-20 text-center'>
       <h1 className={styles.heroSubText + 'mb-2 lg:mb-2'}>WHAT I HAVE DONE SO FAR</h1>
-      <h1 className={styles.heroHeadText}>Work Experience</h1>
+      <h1 className={styles.heroHeadText + ' '}>Work Experience</h1>
       <VerticalTimeline>
         {experienceData.map((item, index) => (
           <VerticalTimelineElement
