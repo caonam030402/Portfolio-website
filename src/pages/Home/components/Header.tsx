@@ -35,7 +35,7 @@ export default function Header() {
     setDarkSide(checked)
   }
 
-  const menu = ['Home', 'Project', 'About', 'Contact']
+  const menu = ['Home', 'Project', 'About', 'Contact', 'Blog']
 
   const handleOpenMenu = () => {
     setOpenMenu(true)
@@ -77,10 +77,10 @@ export default function Header() {
             onClick={handleCloseMenu}
             className='fixed inset-0 bg-slate-200/25 backdrop-blur-sm dark:bg-blue-700/10'
           ></button>
-          <div className='z-200 fixed left-[5%] right-[20%] top-[3%] flex h-auto justify-between gap-8 rounded-lg bg-white p-7 shadow-lg dark:bg-blue-950'>
-            <div className='flex flex-col gap-10'>
+          <div className='z-200 fixed left-[5%] right-[20%] top-[3%] flex h-auto justify-between gap-8 rounded-lg bg-white p-7 shadow-lg dark:bg-secondaryDark'>
+            <div className='flex flex-col gap-8'>
               {menu.map((item, index) => (
-                <Link className='flex text-xl hover:text-blue-700 md:block' key={index} to=''>
+                <Link className='flex text-sm hover:text-primary md:block' key={index} to=''>
                   {item}
                 </Link>
               ))}
