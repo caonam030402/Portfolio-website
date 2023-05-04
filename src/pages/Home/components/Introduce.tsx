@@ -13,7 +13,7 @@ export default function Introduce() {
         </div>
         <div className=''>
           <p className='text-base text-gray-500 dark:text-gray-400'>XIN CHÀO CÁC BẠN {':>'}</p>
-          <h1 className={`heroHeadText text-[36px] font-semibold md:text-[60px]`}>
+          <h1 className={`heroHeadText text-[36px] font-semibold md:text-[68px]`}>
             Mình là <span className='font-extrabold text-primary'>Cao Nam</span>
           </h1>
           <h3 className={styles.heroSubText + 'mb-3 w-[80%] lg:mb-5'}>
