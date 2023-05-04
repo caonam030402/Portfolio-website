@@ -1,3 +1,4 @@
+import Button from 'src/components/Button'
 import Pagination from 'src/components/Pagination'
 import { projectData } from 'src/constants/data'
 import { styles } from 'src/constants/styles'
@@ -5,6 +6,7 @@ import { styles } from 'src/constants/styles'
 export default function Project() {
   return (
     <div className='container my-[25px] text-center'>
+      <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>MY WORK</h1>
       <h1 className={styles.heroHeadText}>Project</h1>
       <p className={styles.heroSubText}>Đây là một số sản phẩm trong quá trình học tập và làm việc của mình.</p>
       {/* <div className='mt-8 flex justify-center gap-5 font-semibold'>
@@ -128,6 +130,9 @@ export default function Project() {
           </div>
         </div>
       </div>
+      <Button withIcon={false} classNameOther='rounded-md mt-8 mx-auto '>
+        Show more...
+      </Button>
     </div>
   )
 }

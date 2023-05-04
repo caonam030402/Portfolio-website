@@ -9,7 +9,7 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 export default function Button({ children, withIcon = true, classNameOther }: Props) {
   return (
     <button className={`text- flex items-center gap-1 rounded-full bg-primary px-7 py-2 ${classNameOther}`}>
-      <span className='text-sm uppercase text-white'>{children}</span>
+      <span className='text-sm text-white'>{children}</span>
       {withIcon && (
         <span>
           <svg width={18} height={18} viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'>

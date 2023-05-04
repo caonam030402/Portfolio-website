@@ -7,9 +7,9 @@ import { styles } from 'src/constants/styles'
 
 export default function Experience() {
   return (
-    <div className='container mt-20 text-center'>
-      <h1 className={styles.heroSubText + 'mb-2 lg:mb-2'}>WHAT I HAVE DONE SO FAR</h1>
-      <h1 className={styles.heroHeadText + ' '}>Work Experience</h1>
+    <div className='container my-40 text-center'>
+      <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>WHAT I HAVE DONE SO FAR</h1>
+      <h1 className={styles.heroHeadText + ' mb-20'}>Work Experience</h1>
       <VerticalTimeline>
         {experienceData.map((item, index) => (
           <VerticalTimelineElement

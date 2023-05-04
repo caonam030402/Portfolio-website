@@ -6,7 +6,7 @@ export default function AboutMe() {
   return (
     <div className='container mb-36 grid grid-cols-7 items-center md:gap-20 lg:grid-cols-12'>
       <div className='col-span-7 mt-20 md:mt-0'>
-        <h1 className={styles.heroSubText + ' mb-2 lg:mb-2'}>INTRODUCTION</h1>
+        <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>INTRODUCTION</h1>
         <h1 className={styles.heroHeadText}>About Me</h1>
         <p className={styles.sectionSubText + ' lg:mb-8'}>
           Chào bạn, tôi là Cao Nam - một sinh viên năm 3 chuyên ngành Công nghệ thông tin. Trong thời gian làm việc
