@@ -1,6 +1,7 @@
 import { styles } from 'src/constants/styles'
 import photo from '../../../assets/3d-young.png'
 import { FaFacebookSquare, FaBehanceSquare, FaInstagramSquare } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export default function Introduce() {
   return (
@@ -11,7 +12,7 @@ export default function Introduce() {
           <div className='h-[200px] w-1 bg-gradient-to-b from-primary md:h-[300px]'> </div>
         </div>
         <div className=''>
-          <p className='text-lg text-gray-500 dark:text-gray-400'>XIN CHÀO CÁC BẠN {':>'}</p>
+          <p className='text-base text-gray-500 dark:text-gray-400'>XIN CHÀO CÁC BẠN {':>'}</p>
           <h1 className={`heroHeadText text-[36px] font-semibold md:text-[60px]`}>
             Mình là <span className='font-extrabold text-primary'>Cao Nam</span>
           </h1>
@@ -19,10 +20,16 @@ export default function Introduce() {
             là một Designer và đang là sinh viên năm 3 chuyên ngành Công nghệ thông tin.
           </h3>
           <div className='flex items-center gap-3 text-2xl text-primary md:gap-3 md:text-2xl'>
-            <h1 className='text-base font-bold text-gray-500 dark:text-gray-400'>Follow mình</h1>
-            <FaFacebookSquare />
-            <FaBehanceSquare />
-            <FaInstagramSquare />
+            <h1 className='cursor-pointer text-base font-bold text-gray-500 dark:text-gray-400'>Follow mình</h1>
+            <Link className='hover:opacity-80' to='https://www.facebook.com/Mikuuu7'>
+              <FaFacebookSquare />
+            </Link>
+            <Link className='hover:opacity-80' to=''>
+              <FaBehanceSquare />
+            </Link>
+            <Link className='hover:opacity-80' to=''>
+              <FaInstagramSquare />
+            </Link>
           </div>
         </div>
       </div>

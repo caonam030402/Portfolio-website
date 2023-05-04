@@ -54,14 +54,14 @@ export default function Header() {
     >
       <CgMenuLeft onClick={handleOpenMenu} className='cursor-pointer text-3xl md:hidden' />
       <div className='flex items-center'>
-        <div className='w-32 md:mr-16'>
+        <Link to='#' className='w-32 md:mr-16'>
           <img className='' src={logo} alt='' />
-        </div>
+        </Link>
       </div>
       <div className='flex items-center'>
         <div className='flex justify-center gap-14 text-sm font-[600]'>
           {menu.map((item, index) => (
-            <Link className='hidden hover:text-blue-700 md:block' key={index} to=''>
+            <Link className='hidden hover:text-primary md:block' key={index} to=''>
               {item}
             </Link>
           ))}

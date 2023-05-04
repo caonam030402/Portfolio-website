@@ -9,10 +9,10 @@ export default function AboutMe() {
         <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>INTRODUCTION</h1>
         <h1 className={styles.heroHeadText}>About Me</h1>
         <p className={styles.sectionSubText + ' lg:mb-8'}>
-          Chào bạn, tôi là Cao Nam - một sinh viên năm 3 chuyên ngành Công nghệ thông tin. Trong thời gian làm việc
-          part-time và freelance, tôi đã tích lũy được 2 năm kinh nghiệm trong lĩnh vực Graphic Designer. Hiện tại, tôi
-          đang quan tâm và có định hướng trở thành một nhà phát triển website. Tôi tin tưởng vào sự kiên trì và nỗ lực
-          không ngừng nghỉ sẽ giúp tôi đạt được mục tiêu của mình.
+          Chào bạn, mình là <span className='font-semibold text-primary'>Cao Nam</span> một sinh viên năm 3 chuyên ngành
+          Công nghệ thông tin. Trong thời gian làm việc part-time và freelance, mình đã tích lũy được 2 năm kinh nghiệm
+          trong lĩnh vực Graphic Designer. Hiện tại, mình đang quan tâm và có định hướng trở thành một nhà phát triển
+          website. Mình tin tưởng vào sự kiên trì và nỗ lực không ngừng nghỉ sẽ giúp tôi đạt được mục tiêu của mình.
         </p>
         {/* <div className='mb-8 mt-6 grid grid-cols-6 gap-5'>
           <div className='col-span-2'>
