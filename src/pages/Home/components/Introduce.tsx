@@ -17,7 +17,7 @@ export default function Introduce() {
             Mình là <span className='font-extrabold text-primary'>Cao Nam</span>
           </h1>
           <h3 className={styles.heroSubText + 'mb-3 w-[80%] lg:mb-5'}>
-            là một Designer và đang là sinh viên năm 3 chuyên ngành Công nghệ thông tin.
+            là một sinh viên năm 3 chuyên ngành công nghệ thông tin và công việc tại của hình là một Graphic Design.
           </h3>
           <div className='flex items-center gap-3 text-2xl text-primary md:gap-3 md:text-2xl'>
             <h1 className='cursor-pointer text-base font-bold text-gray-500 dark:text-gray-400'>Follow mình</h1>
