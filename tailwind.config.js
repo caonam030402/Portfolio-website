@@ -9,6 +9,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         pattern: "url('./src/assets/herobg.png')"
+      },
+      colors: {
+        primary: '#1a56db',
+        backgroundDark: '#111827',
+        secondaryDark: '#1f2937'
       }
     }
   },

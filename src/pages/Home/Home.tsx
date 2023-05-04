@@ -11,7 +11,7 @@ import Skill from './components/Skill'
 export default function Home() {
   return (
     <div>
-      <div className='w-full bg-cover dark:bg-pattern md:h-[783px]'>
+      <div className='w-full bg-cover md:h-[783px]'>
         <Header />
         <Introduce />
       </div>

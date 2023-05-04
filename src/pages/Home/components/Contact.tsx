@@ -3,7 +3,7 @@ import Button from 'src/components/Button'
 
 export default function Contact() {
   return (
-    <div className='container my-40 grid grid-cols-6 rounded-xl bg-blue-700/5 p-10 md:gap-20 lg:grid-cols-12'>
+    <div className='container my-40 grid grid-cols-6 rounded-xl bg-secondaryDark p-10 md:gap-20 lg:grid-cols-12'>
       <div className='col-span-6'>
         <h1 className='text-[48px] font-bold'>Connect with me</h1>
         <p>

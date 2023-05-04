@@ -48,7 +48,7 @@ export default function Header() {
     <div
       className={`fixed left-0 right-0 top-0 z-40 flex items-center justify-between py-5 ${
         isScroll
-          ? 'bg-slate-50 px-4 drop-shadow-md backdrop-blur-sm transition-shadow dark:bg-gray-800 xl:px-[136px]'
+          ? 'border-b border-gray-200 px-4 backdrop-blur-sm transition-shadow dark:border-gray-600 dark:bg-backgroundDark xl:px-[136px]'
           : 'container bg-[#050816] bg-transparent'
       }`}
     >
@@ -57,16 +57,16 @@ export default function Header() {
         <div className='w-20 md:mr-16'>
           <img className='' src={logo} alt='' />
         </div>
-        <div className='flex justify-center gap-14 text-base font-semibold '>
+      </div>
+      <div className='flex items-center'>
+        <div className='flex justify-center gap-14 text-sm font-[600]'>
           {menu.map((item, index) => (
             <Link className='hidden hover:text-blue-700 md:block' key={index} to=''>
               {item}
             </Link>
           ))}
         </div>
-      </div>
-      <div className='flex items-center'>
-        <DarkModeSwitch className='md:w-[100px]' checked={darkSide} onChange={toggleDarkMode} size={30} />
+        <DarkModeSwitch className='md:w-[100px]' checked={darkSide} onChange={toggleDarkMode} size={25} />
         <Button withIcon={false} classNameOther='rounded-[8px] md:block hidden'>
           My resume
         </Button>

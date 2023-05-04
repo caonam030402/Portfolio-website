@@ -1,9 +1,8 @@
-import useDarkMode from './hooks/useDarkMode'
 import Home from './pages/Home/Home'
 
 function App() {
   return (
-    <div className={`dark:bg-[#050816] dark:text-white`}>
+    <div className={`dark:bg-backgroundDark dark:text-white`}>
       <Home />
     </div>
   )
