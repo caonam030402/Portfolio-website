@@ -93,3 +93,22 @@ export const experienceData = [
       'Vì thời gian mình còn rảnh rỗi nên mình tiếp tục tìm thêm một công việc cố định nên mình đã quyết định ứng tuyển vào Socos. Sau những bài kiểm tra thì mình đã chính thực được nhận vào làm với vị trí Graphic Design.'
   }
 ]
+
+export const menuData = [
+  {
+    id: 'about',
+    name: 'About'
+  },
+  {
+    id: 'project',
+    name: 'Project'
+  },
+  {
+    id: 'contact',
+    name: 'Contact'
+  },
+  {
+    id: 'blog',
+    name: 'Blog'
+  }
+]

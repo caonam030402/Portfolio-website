@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useActionData } from 'react-router-dom'
 import logo from '../../../assets/logo.png'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 import Button from 'src/components/Button'
 import { CgMenuLeft } from 'react-icons/cg'
 import { IoMdClose } from 'react-icons/io'
 import useDarkMode from 'src/hooks/useDarkMode'
+import { menuData } from 'src/constants/data'
+import { Link } from 'react-scroll'
 
 export default function Header() {
-  const [isOpenMenu, setOpenMenu] = useState(false)
   const { colorTheme, setTheme } = useDarkMode()
+  const [isOpenMenu, setOpenMenu] = useState(false)
   const [isScroll, setIsScroll] = useState(false)
   const [darkSide, setDarkSide] = useState(colorTheme === 'light' ? true : false)
+  const [active, setActive] = useState('')
 
   useEffect(() => {
     const updatePosition = () => {
@@ -35,8 +37,6 @@ export default function Header() {
     setDarkSide(checked)
   }
 
-  const menu = ['Home', 'Project', 'About', 'Contact', 'Blog']
-
   const handleOpenMenu = () => {
     setOpenMenu(true)
   }
@@ -54,15 +54,34 @@ export default function Header() {
     >
       <CgMenuLeft onClick={handleOpenMenu} className='cursor-pointer text-3xl md:hidden' />
       <div className='flex items-center'>
-        <Link to='#' className='w-32 md:mr-16'>
+        <Link
+          activeClass='active'
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
+          to='home'
+          className='w-32 cursor-pointer md:mr-16'
+        >
           <img className='' src={logo} alt='' />
         </Link>
       </div>
       <div className='flex items-center'>
         <div className='flex justify-center gap-14 text-sm font-[600]'>
-          {menu.map((item, index) => (
-            <Link className='hidden hover:text-primary md:block' key={index} to=''>
-              {item}
+          {menuData.map((item) => (
+            <Link
+              className={
+                active === item.name ? 'text-primary' : '' + 'hidden cursor-pointer hover:text-primary md:block'
+              }
+              key={item.id}
+              to={item.id}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={() => setActive(item.name)}
+            >
+              {item.name}
             </Link>
           ))}
         </div>
@@ -79,9 +98,9 @@ export default function Header() {
           ></button>
           <div className='z-200 fixed left-[5%] right-[20%] top-[3%] flex h-auto justify-between gap-8 rounded-lg bg-white p-7 shadow-lg dark:bg-secondaryDark'>
             <div className='flex flex-col gap-8'>
-              {menu.map((item, index) => (
-                <Link className='flex text-sm hover:text-primary md:block' key={index} to=''>
-                  {item}
+              {menuData.map((item) => (
+                <Link className='flex text-sm hover:text-primary md:block' key={item.id} to={item.id}>
+                  {item.name}
                 </Link>
               ))}
               <Button withIcon={false} classNameOther='rounded-md'>

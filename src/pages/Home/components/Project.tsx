@@ -5,7 +5,7 @@ import { styles } from 'src/constants/styles'
 
 export default function Project() {
   return (
-    <div className='container my-[25px] text-center'>
+    <section id='project' className='container my-[25px] text-center'>
       <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>MY WORK</h1>
       <h1 className={styles.heroHeadText}>Project</h1>
       <p className={styles.heroSubText}>Đây là một số sản phẩm trong quá trình học tập và làm việc của mình.</p>
@@ -133,6 +133,6 @@ export default function Project() {
       <Button withIcon={false} classNameOther='rounded-md mt-8 mx-auto '>
         Show more...
       </Button>
-    </div>
+    </section>
   )
 }

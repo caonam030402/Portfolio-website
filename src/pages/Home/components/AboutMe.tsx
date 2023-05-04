@@ -4,7 +4,7 @@ import { styles } from 'src/constants/styles'
 
 export default function AboutMe() {
   return (
-    <div className='container mb-36 grid grid-cols-7 items-center md:gap-20 lg:grid-cols-12'>
+    <div id='about' className='container mb-36 grid grid-cols-7 items-center md:gap-20 lg:grid-cols-12'>
       <div className='col-span-7 mt-20 md:mt-0'>
         <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>INTRODUCTION</h1>
         <h1 className={styles.heroHeadText}>About Me</h1>

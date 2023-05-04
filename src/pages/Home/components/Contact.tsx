@@ -4,7 +4,10 @@ import Button from 'src/components/Button'
 
 export default function Contact() {
   return (
-    <div className='container my-40 grid grid-cols-6 rounded-xl border border-gray-100 bg-gray-50 p-10 dark:border-gray-700 dark:bg-secondaryDark md:gap-20 lg:grid-cols-12'>
+    <div
+      id='contact'
+      className='container my-40 grid grid-cols-6 rounded-xl border border-gray-100 bg-gray-50 p-10 dark:border-gray-700 dark:bg-secondaryDark md:gap-20 lg:grid-cols-12'
+    >
       <div className='col-span-12 hidden lg:col-span-4 lg:block'>
         <img className='w-[80%] lg:ml-16' src={photo} alt='' />
       </div>
