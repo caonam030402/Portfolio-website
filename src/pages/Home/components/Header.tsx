@@ -32,6 +32,12 @@ export default function Header() {
     return () => window.removeEventListener('scroll', updatePosition)
   }, [isOpenMenu])
 
+  useEffect(() => {
+    if (active) {
+      setOpenMenu(false)
+    }
+  }, [active])
+
   const toggleDarkMode = (checked: boolean) => {
     setTheme(colorTheme)
     setDarkSide(checked)
@@ -62,6 +68,7 @@ export default function Header() {
           duration={500}
           to='home'
           className='w-32 cursor-pointer md:mr-16'
+          onClick={() => setActive('')}
         >
           <img className='' src={logo} alt='' />
         </Link>
@@ -99,7 +106,12 @@ export default function Header() {
           <div className='z-200 fixed left-[5%] right-[20%] top-[3%] flex h-auto justify-between gap-8 rounded-lg bg-white p-7 shadow-lg dark:bg-secondaryDark'>
             <div className='flex flex-col gap-8'>
               {menuData.map((item) => (
-                <Link className='flex text-sm hover:text-primary md:block' key={item.id} to={item.id}>
+                <Link
+                  className={active === item.name ? 'text-primary' : '' + ' flex text-sm hover:text-primary md:block'}
+                  key={item.id}
+                  to={item.id}
+                  onClick={() => setActive(item.name)}
+                >
                   {item.name}
                 </Link>
               ))}
