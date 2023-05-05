@@ -28,7 +28,7 @@ export default function Contact() {
   const onSubmit = async (data: FormValues) => {
     try {
       contactApi.postMessage(data)
-      toast.success('Thành công')
+      toast.success('Cảm ơn bạn ><')
     } catch (e) {
       toast.error('Thất bại')
     }

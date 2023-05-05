@@ -1,4 +1,5 @@
 import { styles } from 'src/constants/styles'
+import Typewriter from 'typewriter-effect'
 import photo from '../../../assets/3d-young.png'
 import { FaFacebookSquare, FaBehanceSquare, FaInstagramSquare } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -13,9 +14,19 @@ export default function Introduce() {
         </div>
         <div className=''>
           <p className='text-base text-gray-500 dark:text-gray-400'>XIN CHÀO CÁC BẠN {':>'}</p>
-          <h1 className={`heroHeadText text-[36px] font-semibold md:text-[68px]`}>
+          <div className='text-[68px] font-bold text-primary'>
+            <Typewriter
+              options={{
+                strings: 'Mình là Cao Nam',
+                autoStart: true,
+                loop: true,
+                devMode: true
+              }}
+            ></Typewriter>
+          </div>
+          {/* <h1 className={`heroHeadText text-[36px] font-semibold md:text-[68px]`}>
             Mình là <span className='font-extrabold text-primary'>Cao Nam</span>
-          </h1>
+          </h1> */}
           <h3 className={styles.heroSubText + 'mb-3 md:w-[80%] lg:mb-5'}>
             là một sinh viên năm 3 chuyên ngành công nghệ thông tin và công việc tại của mình là một Graphic Design.
           </h3>
