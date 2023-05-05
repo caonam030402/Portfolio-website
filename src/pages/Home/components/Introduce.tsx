@@ -8,7 +8,7 @@ export default function Introduce() {
   return (
     <div id='home' className='container flex flex-col items-center justify-between pt-[50px] md:flex-row md:pt-[48px]'>
       <div className='mt-14 flex items-start'>
-        <div className='mr-5 flex hidden flex-col items-center md:block'>
+        <div className='mr-5 flex flex-col items-center'>
           <div className='text- h-6 w-6 rounded-full bg-primary'></div>
           <div className='h-[200px] w-1 bg-gradient-to-b from-primary md:h-[300px]'> </div>
         </div>
