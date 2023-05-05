@@ -14,7 +14,7 @@ export default function Introduce() {
         </div>
         <div className=''>
           <p className='text-base text-gray-500 dark:text-gray-400'>XIN CHÀO CÁC BẠN {':>'}</p>
-          <div className='text-[36px] font-bold text-primary md:text-[68px]'>
+          <div className='text-[34px] font-bold text-primary md:text-[68px]'>
             <Typewriter
               options={{
                 strings: 'Mình là Cao Nam',
