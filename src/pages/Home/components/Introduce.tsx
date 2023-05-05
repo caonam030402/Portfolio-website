@@ -19,7 +19,6 @@ export default function Introduce() {
               options={{
                 strings: 'Mình là Cao Nam',
                 autoStart: true,
-                loop: true,
                 devMode: true
               }}
             ></Typewriter>
