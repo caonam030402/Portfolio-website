@@ -25,9 +25,6 @@ export default function Introduce() {
               }}
             ></Typewriter>
           </div>
-          {/* <h1 className={`heroHeadText text-[36px] font-semibold md:text-[68px]`}>
-            Mình là <span className='font-extrabold text-primary'>Cao Nam</span>
-          </h1> */}
           <h3 className={styles.heroSubText + ' md:w-[80%] lg:mb-5'}>
             is a 3rd year student majoring in information technology and his current job is a Graphic Design.
           </h3>
@@ -46,7 +43,6 @@ export default function Introduce() {
         </div>
       </div>
       <img className='w-[85%] md:z-30 md:w-[35%]' src={photo} alt='' />
-      {/* <img className='absolute right-[5%] top-[60%] z-0 hidden w-[50%]  dark:md:block' src={gradient} alt='' /> */}
     </div>
   )
 }
