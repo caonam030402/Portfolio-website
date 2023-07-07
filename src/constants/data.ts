@@ -1,3 +1,5 @@
+import avatar from '../assets/coder.png'
+
 export const projectData = [
   {
     name: 'Shoppee Clone',
@@ -58,40 +60,57 @@ export const skillData = [
 ]
 
 export const experienceData = [
+  // {
+  //   date: '09.2020 - Đến nay',
+  //   title: 'Sinh Viên',
+  //   subTitle: 'Công nghệ thông tin',
+  //   description: 'Hiện tại tôi đang là sinh viên năm 3 chuyên ngành công nghệ thông tin.'
+  // },
+  // {
+  //   date: '01.2021 - 01.2022',
+  //   title: 'Bảo lưu',
+  //   subTitle: 'Thực hiện đam mê',
+  //   description:
+  //     'Sau khi theo học được 1 kì tại trường đại học, thì mình đã quyết định bảo lưu để thực hiện đam mê trở thành game thủ chuyên nghiệp'
+  // },
+  // {
+  //   date: '05.2021 - 01.2022',
+  //   title: 'Freelance',
+  //   subTitle: 'Graphic Design',
+  //   description:
+  //     'Sau nhiều biến cố xảy ra thì mình trở về nhà, trong thời gian rảnh rỗi thì mình đã tự học Graphic Design sau 1 vài tháng thì mình bắt đầu nhận được những Job đầu tiên.'
+  // },
   {
-    date: '09.2020 - Đến nay',
-    title: 'Sinh Viên',
-    subTitle: 'Công nghệ thông tin',
-    description: 'Hiện tại tôi đang là sinh viên năm 3 chuyên ngành công nghệ thông tin.'
-  },
-  {
-    date: '01.2021 - 01.2022',
-    title: 'Bảo lưu',
-    subTitle: 'Thực hiện đam mê',
-    description:
-      'Sau khi theo học được 1 kì tại trường đại học, thì mình đã quyết định bảo lưu để thực hiện đam mê trở thành game thủ chuyên nghiệp'
-  },
-  {
-    date: '05.2021 - 01.2022',
+    date: '02.2021 - Đến nay',
     title: 'Freelance',
     subTitle: 'Graphic Design',
     description:
-      'Sau nhiều biến cố xảy ra thì mình trở về nhà, trong thời gian rảnh rỗi thì mình đã tự học Graphic Design sau 1 vài tháng thì mình bắt đầu nhận được những Job đầu tiên.'
+      'Sau khi tự học Thiết kế từ tháng 12 năm 2020, vài tháng sau đó, tôi đã bắt đầu nhận được những công việc đầu tiên.',
+    icon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-f5205.appspot.com/o/Logo%20Company%2Ffreelance.png?alt=media&token=3d38e654-e470-4d07-b100-2b2f6beb45a4'
   },
   {
-    date: '05.2021 - 01.2022',
+    date: '05.2021 - Đến nay',
     title: 'Công ty BECA',
     subTitle: 'Graphic Design',
+    icon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-f5205.appspot.com/o/Logo%20Company%2Fbeca.png?alt=media&token=4a690035-93a4-4a14-b730-7bd02fb6cb38',
     description:
-      'Sau một khoảng thời gian làm Freelance thì tình cờ có một Chú thuê mình làm và sau khi hoàn thành sản phẩm thì Chú có ngỏ lời muốn tuyển mình vào công ty với vị trí Graphic Design.'
+      'Sau một khoảng thời gian làm Freelance thì tình cờ có một Chú thuê mình làm và sau khi hoàn thành sản phẩm, thì Chú có ngỏ lời muốn tuyển mình vào công ty với vị trí Graphic Design.'
   },
   {
-    date: '05.2021 - 01.2022',
+    date: '12.2022 - Đến nay',
     title: 'Dược mỹ phẩm Socos',
     subTitle: 'Graphic Design',
+    icon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-f5205.appspot.com/o/Logo%20Company%2Fsocos%20(2).png?alt=media&token=ede904f0-2a40-4ffb-9981-2c8399d200df',
     description:
-      'Vì thời gian mình còn rảnh rỗi nên mình tiếp tục tìm thêm một công việc cố định nên mình đã quyết định ứng tuyển vào Socos. Sau những bài kiểm tra thì mình đã chính thực được nhận vào làm với vị trí Graphic Design.'
+      'Vì thời gian mình còn rảnh, nên mình tiếp tục tìm thêm một công việc cố định, mình đã quyết định ứng tuyển vào Socos. Sau những bài kiểm tra thì mình đã chính thực được nhận vào làm với vị trí Graphic Design.'
   }
+  // {
+  //   date: '03.2023 - Đến nay',
+  //   title: 'Dự án tại trường',
+  //   subTitle: 'Front End',
+  //   icon: 'https://firebasestorage.googleapis.com/v0/b/portfolio-f5205.appspot.com/o/Logo%20Company%2Fsocos%20(2).png?alt=media&token=ede904f0-2a40-4ffb-9981-2c8399d200df',
+  //   description: 'Với sự dẫn dắt của các anh ra trường đã làm ở công ty'
+  // }
 ]
 
 export const menuData = [

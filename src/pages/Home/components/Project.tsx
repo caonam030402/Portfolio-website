@@ -8,7 +8,7 @@ export default function Project() {
     <section id='project' className='container my-[25px] text-center'>
       <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>MY WORK</h1>
       <h1 className={styles.heroHeadText}>Project</h1>
-      <p className={styles.heroSubText}>Đây là một số sản phẩm trong quá trình học tập và làm việc của mình.</p>
+      <p className={styles.heroSubText}>These are some of the products in his learning and working process.</p>
       {/* <div className='mt-8 flex justify-center gap-5 font-semibold'>
         <button className='w-[100px] rounded-lg bg-cyan-500 py-1'>All</button>
         <button className='w-[100px] rounded-lg border-[1px] border-cyan-500 py-1'>Design</button>
