@@ -43,7 +43,7 @@ export default function Contact() {
         <img className='w-[80%] lg:ml-16' src={photo} alt='' />
       </div>
       <div className='col-span-8'>
-        <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>GET IN TOUCH</h1>
+        <h1 className='font-medium text-primary lg:text-base'>GET IN TOUCH</h1>
         <h1 className={styles.heroHeadText + ' mb-12'}>Contact</h1>
         <form action='' onSubmit={handleSubmit(onSubmit)}>
           <div>

@@ -6,7 +6,7 @@ import { styles } from 'src/constants/styles'
 export default function Project() {
   return (
     <section id='project' className='container my-[25px] text-center'>
-      <h1 className='mb-2 font-medium text-primary lg:mb-2 lg:text-base'>MY WORK</h1>
+      <h1 className='font-medium text-primary lg:text-base'>MY WORK</h1>
       <h1 className={styles.heroHeadText}>Project</h1>
       <p className={styles.heroSubText}>These are some of the products in his learning and working process.</p>
       {/* <div className='mt-8 flex justify-center gap-5 font-semibold'>
