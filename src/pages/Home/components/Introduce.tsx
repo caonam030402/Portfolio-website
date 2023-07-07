@@ -14,7 +14,7 @@ export default function Introduce() {
         </div>
         <div className=''>
           <p className='text-base text-gray-500 dark:text-gray-400'>HELLO THERE {':>'}</p>
-          <div className='flex gap-2 text-[34px] font-bold text-primary md:gap-3 lg:text-[60px]'>
+          <div className='flex gap-2 text-[27px] font-bold text-primary sm:text-[34px] md:gap-3 lg:text-[60px]'>
             <span className='text-gray-400'> I'm</span>
             <Typewriter
               options={{
