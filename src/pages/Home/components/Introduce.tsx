@@ -42,7 +42,7 @@ export default function Introduce() {
           </div>
         </div>
       </div>
-      <img className='w-[85%] md:z-30 md:w-[35%]' src={photo} alt='' />
+      <img className='amimate w-[85%] md:z-30 md:w-[35%]' src={photo} alt='' />
     </div>
   )
 }
