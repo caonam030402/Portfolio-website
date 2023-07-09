@@ -13,8 +13,10 @@ export default function Introduce() {
           <div className='h-[200px] w-1 bg-gradient-to-b from-primary md:h-[300px]'> </div>
         </div>
         <div className=''>
-          <p className='text-base text-gray-500 dark:text-gray-400'>HELLO THERE {':>'}</p>
-          <div className='flex gap-2 text-[25px] font-bold text-primary sm:text-[34px] md:gap-3 lg:text-[60px]'>
+          <p className='text-sm text-gray-500 dark:text-gray-400'>
+            HELLO THERE <span className='text-xl'>👋</span>
+          </p>
+          <div className='flex gap-2 text-[23px] font-bold text-primary sm:text-[34px] md:gap-3 lg:text-[60px]'>
             <span className='text-gray-400'> I'm</span>
             <Typewriter
               options={{
@@ -29,7 +31,7 @@ export default function Introduce() {
             is a 3rd year student majoring in information technology and his current job is a Graphic Design.
           </h3>
           <div className='flex items-center gap-3 text-2xl text-primary md:gap-3 md:text-2xl'>
-            <h1 className='cursor-pointer text-base font-bold text-gray-500 dark:text-gray-400'>Follow me</h1>
+            <h1 className='cursor-pointer text-sm font-bold text-gray-500 dark:text-gray-400'>Follow me</h1>
             <Link className='hover:opacity-80' to='https://www.facebook.com/Mikuuu7'>
               <FaFacebookSquare />
             </Link>
