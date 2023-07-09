@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom'
 
 export default function Introduce() {
   return (
-    <div id='home' className='container flex flex-col items-center justify-between pt-[50px] md:flex-row md:pt-[48px]'>
-      <div className='mt-14 flex items-start'>
-        <div className='mr-5 flex flex-col items-center'>
+    <div id='home' className='container flex flex-col items-center justify-between pt-[50px] md:flex-row md:pt-[36px]'>
+      <div className='mt-10 flex items-start md:mt-0'>
+        {/* <div className='mr-5 flex flex-col items-center'>
           <div className='text- h-3 w-3 rounded-full bg-primary md:h-6 md:w-6'></div>
           <div className='h-[200px] w-1 bg-gradient-to-b from-primary md:h-[300px]'> </div>
-        </div>
+        </div> */}
         <div className=''>
           <p className='text-sm text-gray-500 dark:text-gray-400'>
             HELLO THERE <span className='text-xl'>👋</span>

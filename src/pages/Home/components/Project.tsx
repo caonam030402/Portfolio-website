@@ -1,6 +1,4 @@
 import Button from 'src/components/Button'
-import Pagination from 'src/components/Pagination'
-import { projectData } from 'src/constants/data'
 import { styles } from 'src/constants/styles'
 
 export default function Project() {
