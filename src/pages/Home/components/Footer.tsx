@@ -7,8 +7,8 @@ export default function Footer() {
     <footer className='bg-white shadow dark:bg-gray-900'>
       <div className='mx-auto w-full max-w-screen-xl p-4 md:py-8'>
         <div className='sm:flex sm:items-center sm:justify-between'>
-          <a href='https://flowbite.com/' className='mb-4 flex items-center sm:mb-0'>
-            <img src={logo} className='mr-3 h-10' alt='Flowbite Logo' />
+          <a href='https://flowbite.com/' className='mb-4 flex items-center text-2xl font-bold text-primary sm:mb-0'>
+            CaoNam
           </a>
           <ul className='mb-6 flex flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:mb-0'>
             <li>

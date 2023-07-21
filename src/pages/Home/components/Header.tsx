@@ -54,7 +54,7 @@ export default function Header() {
     <div
       className={`fixed left-0 right-0 top-0 z-40 flex items-center justify-between py-5 ${
         isScroll
-          ? 'border-b border-gray-200 px-4 backdrop-blur-sm transition-shadow dark:border-gray-600 dark:bg-backgroundDark xl:px-[136px]'
+          ? 'border-b border-gray-200 px-4 backdrop-blur-sm transition-shadow dark:border-gray-600 dark:bg-backgroundDark xl:px-[141px]'
           : 'container bg-[#050816] bg-transparent'
       }`}
     >
@@ -70,7 +70,9 @@ export default function Header() {
           className='w-[60px] cursor-pointer md:w-20 '
           onClick={() => setActive('')}
         >
-          <img className='w-full' src={logo} alt='' />
+          <div className='hidden text-3xl font-medium transition-all duration-500 hover:text-primary md:block'>
+            CaoNam
+          </div>
         </Link>
       </div>
       <div className='flex items-center'>
